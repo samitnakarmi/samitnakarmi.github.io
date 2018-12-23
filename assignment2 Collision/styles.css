@@ -1,0 +1,8 @@
+.main-div {
+    width: 1000px;
+    height: 500px;
+    position: relative;
+    border-style: solid;
+  border-width: 1px 1px 1px 1px;
+
+}
