@@ -1,0 +1,134 @@
+#background {
+  background-image: url('assets/background.jpg');
+  height: 800px;
+  width: 100%;
+  background-size: cover;
+  visibility: hidden;
+}
+
+#hero {
+  background-image: url(assets/airplane.png);
+  height: 55px;
+  width: 75px;
+  position: absolute;
+  top: 700px;
+  left: 550px;
+  background-position: -165px;
+}
+
+#missiles {
+  height: 800px;
+  width: 1200px;
+  position: absolute;
+}
+
+.missile {
+  background-image: url('assets/missile1.png');
+  height: 20px;
+  width: 10px;
+  position: absolute;
+}
+
+.enemyMissiles {
+  background-image: url('assets/missile2.png');
+  height: 20px;
+  width: 10px;
+  position: absolute;
+}
+
+/* #missilesEnemies {
+  height: 800px;
+  width: 1200px;
+  position: absolute;
+}
+
+.missileEnemy {
+  background-image: url('assets/missile2.png');
+  height: 20px;
+  width: 10px;
+  position: absolute;
+} */
+
+.enemy {
+  background-image: url(assets/spaceship.png);
+  height: 32px;
+  width: 52px;
+  position: absolute;
+}
+
+#enemies {
+  height: 800px;
+  width: 1200px;
+  position: absolute;
+}
+
+dialog {
+  width: 150px;
+  height: 150px;
+  /* background-color: blue; */
+  opacity: 0.6;
+  font-size: 50px;
+  color: red;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -75px; /* half width*/
+  margin-top: -75px; /* half height*/
+}
+
+.buttonPlayAgain {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+/* ---------------intro screen stuffs-------------------- */
+#welcome {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(44, 201, 30);
+  background-image: url('assets/universe.jpg');
+  height: 800px;
+  width: 100%;
+}
+
+li {
+  list-style-type: none;
+}
+
+.welcomeContents {
+  position: absolute;
+  top: 210px;
+  left: 530px;
+}
+
+.welcomeTexts {
+  position: absolute;
+  font-size: 25px;
+  left: 125px;
+  box-shadow: 1px 1px 5px 0px;
+}
+
+.botton {
+  position: absolute;
+  left: 40px;
+}
+
+.playButton {
+  top: 20px;
+  border: 2px solid #4caf50;
+  width: 125px;
+  font-size: 25px;
+}
+
+.playButton:hover {
+  background-color: #4caf50;
+  color: white;
+}

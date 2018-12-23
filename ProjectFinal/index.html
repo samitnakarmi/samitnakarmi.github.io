@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Galaxian</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+  </head>
+  <body>
+    <div id="welcome">
+      <div class="welcomeContents">
+        <img src="assets/GalaxianShooter.png" />
+        <div class="welcomeTexts">
+          <p>Select Difficulty To Play!</p>
+          <div class="botton">
+            <ul>
+              <li><button class="playButton" onclick="start(this)">Easy</button></li>
+              <li><button class="playButton" onclick="start(this)">Medium</button></li>
+              <li><button class="playButton" onclick="start(this)">Difficult</button></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="background">
+      <div id="hero"></div>
+      <!-- <div class="enemy"></div> -->
+      <div id="missiles"></div>
+      <div id="enemies"></div>
+      <div id="enemyMissiles"></div>
+      <!-- <div id="missilesEnemies"></div> -->
+      <dialog id="myDialog">GAME OVER! <button onclick="replay()" class="buttonPlayAgain">Play Again</button></dialog>
+
+      <dialog id="winDialog">YOU WIN! <button onclick="replay()" class="buttonPlayAgain">Play Again</button></dialog>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
