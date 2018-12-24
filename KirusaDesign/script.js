@@ -1,5 +1,7 @@
 let slider = new Slider(1108, 256);
 
+// let slider = new Slider(1000, 500);
+
 function Slider(width, height) {
   var that = this;
   this.width = width;
@@ -7,28 +9,30 @@ function Slider(width, height) {
   var index = 0;
   this.roundedButtonList = [];
 
+  //main container div is slider and images is the div containing all the images
   var slider = document.getElementById('slider');
   var images = document.getElementById('images');
-
+  // all the images inside the images div is kept in an array called imagesList
   var imagesList = slider.getElementsByTagName('img');
 
-  this.createButton = function(text, isNext) {
+  //function to create buttons
+  this.createButton = function (text, isNext) {
     var btn = document.createElement('button');
 
     btn.style.position = 'absolute';
     btn.style.width = '35px';
     btn.style.height = '35px';
     btn.style.fontSize = '1px';
-
+    // btn.style.paddingBottom = '20px';
     btn.style.background = '#fff';
     btn.style.border = 'none';
     btn.style.boxShadow = '2px 2px 5px 2px rgba(0, 0, 0, 0.3)';
     btn.style.top = '40%';
-
+    // btn.style.width = '20px';
     btn.style.color = 'red';
-
+    // btn.style.width = parseInt(btn.style.height) * 3 + 'px';
     btn.style.borderRadius = '50%';
-
+    // btn.style.color = 'gray';
     btn.style.fontSize = '20px';
     btn.style.fontWeight = 'bold';
     btn.innerText = text;
@@ -70,13 +74,16 @@ function Slider(width, height) {
 
   // }
 
-  this.getImageByIndex = function(ind) {
+  this.getImageByIndex = function (ind) {
     that.stopTransition(initSlide);
     images.style.left = -that.width * ind + 'px';
     index = ind;
+
+    // that.init();
   };
 
-  this.slideNext = function() {
+  // function to slide to next image
+  this.slideNext = function () {
     that.stopTransition(initSlide);
     index++;
     that.disableButtons();
@@ -86,7 +93,7 @@ function Slider(width, height) {
 
     var mover = -that.width * (index - 1);
 
-    var moveImage = setInterval(function() {
+    var moveImage = setInterval(function () {
       images.style.left = mover + 'px';
       mover--;
       if (mover == -that.width * index) {
@@ -96,7 +103,8 @@ function Slider(width, height) {
     }, 1);
   };
 
-  this.slidePrev = function() {
+  //function to slide to previous slide
+  this.slidePrev = function () {
     that.stopTransition(initSlide);
     index--;
     that.disableButtons();
@@ -107,7 +115,7 @@ function Slider(width, height) {
 
     var mover = -that.width * (index + 1);
 
-    var moveImage = setInterval(function() {
+    var moveImage = setInterval(function () {
       images.style.left = mover + 'px';
       mover++;
 
@@ -118,7 +126,8 @@ function Slider(width, height) {
     }, 1);
   };
 
-  this.autoSlide = function() {
+  //function to auto slide to next slide
+  this.autoSlide = function () {
     index++;
     that.disableButtons();
     if (index > imagesList.length - 1) {
@@ -127,7 +136,7 @@ function Slider(width, height) {
 
     var mover = -that.width * (index - 1);
 
-    var slide = setInterval(function() {
+    var slide = setInterval(function () {
       images.style.left = mover + 'px';
       mover--;
       if (mover == -that.width * index) {
@@ -136,12 +145,13 @@ function Slider(width, height) {
     }, 1);
   };
 
-  this.stopTransition = function(intervalFunction) {
+  this.stopTransition = function (intervalFunction) {
     clearInterval(intervalFunction);
     that.enableButtons();
   };
 
-  this.disableButtons = function() {
+  // function to disable buttons
+  this.disableButtons = function () {
     nextBtn.setAttribute('disabled', 'true');
     prevBtn.setAttribute('disabled', 'true');
 
@@ -150,7 +160,7 @@ function Slider(width, height) {
     // }
   };
 
-  this.enableButtons = function() {
+  this.enableButtons = function () {
     nextBtn.removeAttribute('disabled');
     prevBtn.removeAttribute('disabled');
 
@@ -159,10 +169,11 @@ function Slider(width, height) {
     // }
   };
 
-  this.init = function() {
-    initSlide = setInterval(this.autoSlide, 10000);
+  this.init = function () {
+    initSlide = setInterval(this.autoSlide, 8000);
   };
 
+  // styling for slider
   slider.style.width = that.width + 'px';
   slider.style.height = that.height + 'px';
   slider.style.position = 'relative';
@@ -182,8 +193,10 @@ function Slider(width, height) {
   var nextBtn = this.createButton('>', true);
   // this.createRoundedButtons();
 
+  //event handling for button clicked for next and previous slides
   nextBtn.addEventListener('click', this.slideNext);
   prevBtn.addEventListener('click', this.slidePrev);
 
-  var initSlide = setInterval(this.autoSlide, 10000);
+  //initializing auto slide at the beginning
+  var initSlide = setInterval(this.autoSlide, 8000);
 }
