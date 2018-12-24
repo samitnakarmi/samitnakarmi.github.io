@@ -144,15 +144,23 @@ function Slider(width, height) {
   this.disableButtons = function() {
     nextBtn.setAttribute('disabled', 'true');
     prevBtn.setAttribute('disabled', 'true');
+
+    // for (var b = 0; b < that.roundedButtonList.length; b++) {
+    //     that.roundedButtonList[b].setAttribute('disabled', 'true');
+    // }
   };
 
   this.enableButtons = function() {
     nextBtn.removeAttribute('disabled');
     prevBtn.removeAttribute('disabled');
+
+    // for (var b = 0; b < that.roundedButtonList.length; b++) {
+    //     that.roundedButtonList[b].removeAttribute('disabled');
+    // }
   };
 
   this.init = function() {
-    initSlide = setInterval(this.autoSlide, 8000);
+    initSlide = setInterval(this.autoSlide, 10000);
   };
 
   slider.style.width = that.width + 'px';
@@ -172,9 +180,10 @@ function Slider(width, height) {
 
   var prevBtn = this.createButton('<', false);
   var nextBtn = this.createButton('>', true);
+  // this.createRoundedButtons();
 
   nextBtn.addEventListener('click', this.slideNext);
   prevBtn.addEventListener('click', this.slidePrev);
 
-  var initSlide = setInterval(this.autoSlide, 20000);
+  var initSlide = setInterval(this.autoSlide, 10000);
 }
