@@ -1,0 +1,583 @@
+.main {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1108px;
+}
+
+.header {
+  width: 100%;
+  margin-top: 25px;
+}
+.logo {
+  float: left;
+  width: 11.552346%;
+  margin-top: 22.5px;
+}
+.prob {
+  float: right;
+}
+.prob ul li {
+  line-height: 1.2;
+  font-family: Montserrat;
+  list-style-type: none;
+  display: inline;
+  font-size: 10px;
+  /* float: left; */
+  border-right: 1px solid black;
+  margin-left: 15px;
+  padding-right: 13px;
+  text-align: center;
+}
+.prob ul li:nth-child(3) {
+  border-right: none;
+  text-decoration: none;
+  padding-right: 0px;
+}
+.prob ul li a {
+  text-decoration: none;
+}
+
+.search {
+  float: left;
+  width: 72.111913%;
+  background-color: green;
+  margin-top: 8px;
+  margin-left: 3.158844%;
+  line-height: 36px;
+}
+.search-bar {
+  width: 61.875%;
+  background-color: white;
+  font-size: 17.6px;
+  float: left;
+  min-height: 36px;
+  background-color: #f5f5f5;
+}
+.dropdown {
+  width: 23%;
+  min-height: 40px;
+  /* padding-bottom:4px; */
+  float: left;
+  font-size: 17px;
+  background-color: #edecec;
+}
+.search-btn {
+  width: 14.623%;
+  float: right;
+  min-height: 40px;
+  /* background-color: #34414a; */
+  background-image: url(../images/search.png) no-repeat;
+}
+.options {
+  float: right;
+  width: 13.176895%;
+  margin-top: 10px;
+  line-height: 36px;
+}
+.options li {
+  list-style-type: none;
+  border-right: 1px solid black;
+  vertical-align: middle;
+  float: left;
+  padding-top: 4px;
+}
+.options li a {
+  margin-left: 28px;
+  padding-right: 21px;
+}
+.cartimage {
+  background: url('../images/cart3.png');
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+}
+.manimage {
+  background: url('../images/cart2.png');
+}
+.options li:nth-child(2) {
+  border: none;
+}
+#toggle {
+  display: none;
+}
+.toggle {
+  display: none;
+}
+.hammenu {
+  float: left;
+  margin-left: 3.33935%;
+  font-family: Montserrat;
+  line-height: 46px;
+  font-size: 14px;
+}
+.hammenu a:hover {
+  color: red;
+}
+.hammenu a {
+  margin-right: 36px;
+  color: black;
+  text-decoration: none;
+}
+label {
+  margin: 0 40px 0 0;
+  font-size: 26px;
+  line-height: 70px;
+  display: none;
+  width: 26px;
+  float: left;
+}
+
+/* ________________________________body3_____________________ */
+
+.images-3 {
+  margin-top: 25px;
+}
+.watch {
+  background: url('../images/watch.png') no-repeat;
+  min-height: 253px;
+  float: left;
+  width: 33.333333%;
+  position: relative;
+}
+.shoes {
+  background: url('../images/shoes.png') no-repeat;
+  min-height: 253px;
+  float: left;
+  width: 33.333333%;
+  position: relative;
+}
+
+.camera {
+  background: url('../images/camera.png') no-repeat;
+  min-height: 253px;
+  float: left;
+  width: 33.333333%;
+  position: relative;
+}
+.pro {
+  font-family: Montserrat;
+  font-size: 7px;
+  position: absolute;
+  top: 224px;
+  left: 27px;
+}
+.pro span {
+  margin-right: 28px;
+  color: white;
+}
+/* __________________________HEADING__________________________ */
+
+.heading {
+  line-height: 109px;
+  text-align: center;
+}
+.heading span a {
+  font-size: 47px;
+  font-family: Montserrat;
+  color: black;
+  text-decoration: none;
+  margin-left: 3.7906137%;
+}
+.heading span img {
+  float: right;
+  margin-top: 40px;
+}
+/* __________________________sales__________________________ */
+.salez {
+  margin-top: 8px;
+  text-align: center;
+}
+.salez li {
+  width: 16.60649%;
+  list-style-type: none;
+  float: left;
+}
+.salez li:hover {
+  border: 2px solid lightblue;
+  border-radius: 10px;
+
+}
+.price {
+  line-height: 30px;
+  font-family: Montserrat;
+  font-size: 12px;
+  color: blue;
+  text-align: center;
+  margin-right: 20%;
+  margin-left: 20%;
+}
+.desc {
+  font-size: 10px;
+  font-family: Montserrat;
+  float: left;
+  margin-right: 20%;
+  margin-left: 20%;
+  line-height: 12px;
+  text-align: center;
+}
+.last-row {
+  float: left;
+  margin-top: 98px;
+  width: 100%;
+}
+.last-row li {
+  list-style-type: none;
+}
+.allz {
+  float: left;
+  width: 15.026833%;
+  margin-right: 1.610017%;
+  text-align: center;
+}
+.allz :hover {
+  border: 2px solid lightblue;
+  border-radius: 10px;
+}
+.allz1 {
+  float: left;
+  width: 15%;
+  margin-right: 1.6%;
+}
+.t17 {
+  font-size: 22px;
+  font-family: Montserrat;
+  padding-top: 5px;
+}
+.lr {
+  float: left;
+  margin-top: 20px;
+}
+.catalog {
+  float: left;
+  font-size: 14px;
+  margin-top: 32px;
+}
+.aaa {
+  line-height: 36px;
+  font-size: 14px;
+  font-family: Montserrat;
+}
+
+
+/* ----------------------TabletView mediaquery--------------- */
+@media screen and (max-width: 770px) {
+  .main{
+    margin-left:auto;
+    margin-right: auto;
+    width:100%;
+  }
+  .logo{
+    float:left;
+    width:30%;
+  }
+  .prob{
+    display:none;
+    float:right;
+  }
+  #slider{
+    display:none;
+  }
+  .search{
+    float:left;
+    width:70%;
+    margin-top:30px;
+    margin-left:0px;  
+  }
+
+  .dropdown{
+    width:20%;
+  }
+  .search-btn{
+    width:20%;
+  }
+  .search-bar{
+    width:59%;
+    background-color:white;
+    float:left;
+    max-height:20px;
+  }
+  .options{
+    float:right;
+    width:13%;
+  }
+  .options li{
+    list-style-type:none;
+    border-right:1px solid black;
+    
+    float:left;
+  }
+
+  .options li a{
+    margin-left:6px;
+    padding-right:6px;
+  }
+
+  .hammenu{
+    float:left;
+    margin-left:5px;
+    font-family:ProximaNova;
+    line-height:40px;
+    font-size:15px;
+  }
+  .hammenu a{
+    margin-right:20px;
+    color:black;
+    text-decoration:none;
+  }
+  .images-3{
+    margin-top:0px;
+  }
+  .watch{
+    min-height:253px;
+    float:left;
+    width:50%;
+    margin-left:24%;
+    position:relative;
+    margin-top:20px;
+  }
+   .shoes{
+   min-height:253px;
+   float:left;
+   width:50%;
+   margin-left:24%;
+   position:relative;
+    margin-top:20px;
+  }
+
+  .camera{
+    min-height:253px;
+    float:left;
+    width:50%;
+    margin-left:24%;
+    position:relative;
+    margin-top:20px;
+  }
+  .pro{
+    display:none;
+  }
+
+  .heading{
+  line-height:109px;
+  text-align:center;
+  float:left;
+  margin-left:16%
+
+  }
+  .heading span a{
+    font-size:30px;
+     margin-left:42px;
+  }
+  .heading span img{
+    display:none;
+  }
+
+ .salez li {
+    width:48%;
+    list-style-type: none;
+    float:left;
+    margin-bottom: 2px;
+  }
+  .price{
+    line-height:30px;
+    font-family:Montserrat;
+    font-size:14px;
+    color:blue;
+    text-align:center;
+    margin-right:20%;
+    margin-left:20%;
+
+  }
+  .desc{
+    font-size:10px;
+    font-family:Montserrat;
+    float:left;
+    margin-right:20%;
+    margin-left:20%;
+    line-height: 12px;
+    display:none;
+  }
+
+  .last-row{
+    float:left;
+    margin-top:98px;
+    width:100%;
+  }
+  .last-row li{
+    list-style-type: none;
+    width:100%;
+    text-align:center;
+  }
+
+  .allz1{
+    float:left;
+    width:100%
+    text-align:center;
+  }
+  .t17{
+    font-size:22px;
+    font-family:Montserrat;
+    padding-top:5px;
+    width:80%;
+
+  }
+  .lr{
+    float:right;
+    margin-top:10px;
+  }
+  .catalog{
+    float:right;
+    font-size:10px;
+    margin-top:20px;
+
+  }
+
+  .allz{
+    float:left;
+    margin-right:10%
+  }
+  .aaa{
+    line-height: 36px;
+    font-size:20px;
+    font-family:Montserrat;
+    width:20%;
+    float:left;
+  }
+}
+
+
+
+
+/* ----------mobileView MediaQuery------------------ */
+@media screen and (max-width: 568px) {
+  
+  
+  .header {
+    width: 100%;
+    background-color: none;
+  }
+  .logo {
+    float: left;
+    width: 30%;
+  }
+  .prob {
+    display: none;
+    float: right;
+  }
+  .prob ul li {
+    list-style-type: none;
+    display: inline;
+    font-size: 8px;
+   
+    border-right: 1px solid black;
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+  .prob ul li:nth-child(3) {
+    border-right: none;
+  }
+  .search {
+    float: left;
+    width: 68%;
+    margin-top: 2px;
+  }
+  .dropdown {
+    width: 50%;
+  }
+  .search-btn {
+    width: 50%;
+    background: url(images/searchIcon);
+  }
+
+  .search-bar {
+    width: 100%;
+    background-color: white;
+    float: left;
+    max-height: 20px;
+  }
+  .options {
+    float: right;
+    width: 30%;
+  }
+  .options li {
+    list-style-type: none;
+    border-right: 1px solid black;
+    vertical-align: middle;
+    float: left;
+    margin-left: 11%;
+    padding-right: 11%;
+  }
+  .options li:nth-child(2) {
+    border: none;
+  }
+  #toggle {
+    display: none;
+  }
+  label {
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    display: inline;
+   
+  }
+
+  .hammenu {
+    text-align: left;
+    width: 100%;
+    display: none;
+    font-size: 10px;
+  }
+  .hammenu a {
+    line-height: 20px;
+    display: block;
+    margin-top: 2px;
+    border-bottom: 1px solid #eaeaeb;
+    margin: 0px;
+    text-decoration: none;
+    margin-left: 30%;
+  }
+  .hammenu a:hover {
+    text-decoration: underline;
+    color: red;
+    font-size: 20px;
+  }
+  #toggle:checked + .hammenu {
+    display: block;
+  }
+
+  .images-3 {
+    margin-top: 0px;
+  }
+  .watch {
+    min-height: 253px;
+    float: left;
+    width: 74%;
+    margin-left: 12%;
+    position: relative;
+    margin-top: 20px;
+  }
+  .shoes {
+    min-height: 253px;
+    float: left;
+    width: 74%;
+    margin-left: 12%;
+    position: relative;
+    margin-top: 20px;
+  }
+
+  .camera {
+    min-height: 253px;
+    float: left;
+    width: 74%;
+    margin-left: 12%;
+    position: relative;
+    margin-top: 20px;
+  }
+  .lr {
+    display: none;
+  }
+  .catalog {
+    display: none;
+  }
+}
+
+
+
