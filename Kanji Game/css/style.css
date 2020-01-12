@@ -1,0 +1,29 @@
+/* body {
+  background-image: url("background.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+} */
+
+body {
+  margin: 0;
+  width: 100%;
+  height: 100vh; 
+  color: #fff;
+  background: linear-gradient(-45deg, #001021,#034748,#1481ba,#11b5e4,#0caadc);
+  background-size: 400% 400%;
+  animation: gradientBG 60s ease infinite;
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
