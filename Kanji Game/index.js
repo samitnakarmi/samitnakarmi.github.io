@@ -99,7 +99,7 @@ function setScore() {
 }
 
 function learntWord() {
-  learntWords.innerHTML += '<h3>' + currentWordGlobal + ' : ' + words[currentWordGlobal] + '</h3>';
+  learntWords.innerHTML += '<h6>' + currentWordGlobal + ' : ' + words[currentWordGlobal] + '</h6>';
 }
 
 wordInput.addEventListener('keyup', function(e) {
