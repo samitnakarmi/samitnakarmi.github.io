@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Hello, world!</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+  </head>
+  <body>
+    <div class="jumbotron text-center">
+      <div class="container">
+        <h2>ポケモン! クイズ!</h2>
+        <p>Guess the Japanese name of the given pokemon.</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-10">
+        <div class="container">
+          <h1 class="page-header">
+            <div id="display-pokemon">Balbasaur</div>
+            <small>の日本名は何でしょうか？</small>
+          </h1>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <button id="btn-1" class="btn btn-primary btn-lg"><div id="option-1">フシギダネ</div></button>
+            </div>
+            <div class="col-md-6">
+              <button id="btn-2" class="btn btn-primary btn-lg"><div id="option-2">フシギソウ</div></button>
+            </div>
+          </div>
+          <br />
+          <br /><br />
+          <div class="row">
+            <div class="col-md-6">
+              <button id="btn-3" class="btn btn-primary btn-lg"><div id="option-3">フシギバナ</div></button>
+            </div>
+            <div class="col-md-6">
+              <button id="btn-4" class="btn btn-primary btn-lg"><div id="option-4">ヒトカゲ</div></button>
+            </div>
+          </div>
+
+          <br />
+          <hr />
+          <br />
+
+          <div class="row">
+            <div id="right-wrong" class="col-md-6"></div>
+            <div class="col-md-6">
+              <br />
+              <button id="go-to-next" class="btn btn-warning btn-lg">次へ行く! ーー＞</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <br /><br /><br /><br />
+        <div id="pokemon-image">
+          <!-- <img src="images/pokemonImages/bulbasaur.png" alt="" /> -->
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</html>
