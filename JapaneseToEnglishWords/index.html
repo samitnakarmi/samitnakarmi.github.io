@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="row">
+      <div class="col-md-10">
+        <div class="container text-center">
+          <h1 class="page-header">Japanese To English Words!</h1>
+        </div>
+
+        <div class="container text-center">
+          <!-- Word & Input -->
+          <div class="row">
+            <div class="com-md-6 mx-auto">
+              <br />
+              <h2 class="display-2 mb-5" id="current-word">留学生</h2>
+              <input type="text" class="form-control form-control-lg" placeholder="Start typing..." id="word-input" autofocus />
+
+              <h4 class="" id="message"></h4>
+
+              <!-- Time & Score Columns -->
+              <div class="row mt-5">
+                <div class="col-md-6">
+                  <h3>
+                    Tries Left:
+                    <span id="tries"></span>
+                  </h3>
+                </div>
+                <div class="col-md-6">
+                  <h3>
+                    Score:
+                    <span id="score">0</span>
+                  </h3>
+                </div>
+              </div>
+
+              <!-- Instructions -->
+              <div class="row mt-5">
+                <div class="col-md-12">
+                  <div class="card card-body bg-info text-dark">
+                    <h5>Instructions</h5>
+                    <p>
+                      Enter the english word to the given japanese words. 英語の単語を入力してください。For Example <br />
+                      演算子 → operator <br />
+                      技術 → technology
+                    </p>
+                    <a href="wordList.html" style="color: pink;">単語の一覧</a>
+                    <a href="./Kanji Game/index.html" style="color: pink;">漢字の練習ゲーム</a>
+                    <a href="./pokemonQuizVer1.1/index.html" style="color: pink;">ポケモン・クイズ</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="container">
+          <br />
+          <h1>Learnt Words:</h1>
+          <br />
+          <div id="learnt-words"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
