@@ -1,0 +1,71 @@
+BOOTSTRAP NOTES
+
+Class Name:			Purpose:
+----------------------------------
+
+div container		create margin + responsive
+h1 page-header 		extra padding + border
+p  lead				makes a paragraph stand out
+----------------------------------
+
+ALIGNMENT & TRANSFORMATION
+p   text-left
+	text-center
+	text-right
+	text-justify
+	text-nowrap
+	text-lowercase
+	text-uppercase
+	text-capitalize
+------------------------------------	
+QUICK FLOATS
+div  pull-right
+div  pull-left	
+div  clearfix
+-------------------------------------
+BLOCKQUOTE
+blockquote blockquote
+blockquote blockquote-reverse  put dash on right side
+--------------------------------------
+LIST
+<ul class="list-unstyled">    
+	<li>One</li>
+	<li>Two</li>
+</ul>
+
+<ul class="list-inline">    
+	<li>One</li>
+	<li>Two</li>
+</ul>
+--------------------------------------
+CODE
+&lt;  lessthan sign
+&gt;  greatedthan sign
+kbd   gives a bold look 
+--------------------------------------
+CONTEXTUAL Colors
+text-primary bg-primary 	BLUE
+text-success bg-success 	GREEN
+text-info bg-info 			LIGHT-BLUE
+text-warning bg-warning		LIGHT-Yellow
+text-danger	bg-danger		LIGHT-RED
+text-muted					Faint color
+--------------------------------------
+BUTTONS
+button btn btn-default		default button with hover
+a	   btn btn-default		link as button & hover
+<input type="submit" class="btn btn-default" value="submit" >
+-----------------------------------------
+CONTEXTUAL BUTTONS
+button btn btn-default	colourless button
+button btn btn-primary	blue button
+button btn btn-success	green button
+button btn btn-info		light-blue button
+button btn btn-warning	yellow button
+button btn btn-danger	red button
+button btn btn-link		just gives link
+__________________________________________
+form-group
+	-> form-control
+
+	
